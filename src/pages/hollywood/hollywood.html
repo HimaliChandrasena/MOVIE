@@ -1,0 +1,119 @@
+<!--
+  Generated template for the AllMoviesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	 <ion-buttons left>
+      <button navPop ion-button icon-only style="color: #ffffff;">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Hollywood Movie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="bg" class="no-scroll">
+<!-- 	<ion-item>
+		
+		<ion-input type="text" [(ngModel)]="channelId"></ion-input>
+	</ion-item>
+	<button full ion-button (click)="searchPlaylist()" [disabled]="channelId ===''" color="danger">Search Playlist</button>
+	<ion-list>
+		<button ion-item *ngFor="let list of playlists | async" (click)="openPlaylist(list.id)">
+			<ion-thumbnail item-start>
+				<img [src]="list.snippet.thumbanails.standard.url">
+			</ion-thumbnail>
+			<h2>{{ list.snippet.title }}</h2>
+			<p> {{lis t.snippet.publishedAt | date: 'short</p>
+		</button>
+	</ion-list> -->
+
+	<ion-list>
+		<button (click)="onButtonmovie1()" id="btn">
+		  <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/taken.jpg" id="im"></div>
+		  		
+		  		<div class="col"> 
+		  		<div class="raw"><h2>TAKEN</h2></div>
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.33.29)</h2></div>
+		  	</div>
+		  </div>
+		  </ion-item>	
+		</button>
+
+		<button (click)="onButtonmovie2()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/Pterodactyl.jpg" id="im"></div>
+		  		
+		  		<div class="col">
+		  		<div class="raw"> <h2>PTERODACTYL</h2></div>
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.27.55)</h2></div>
+		  	</div>
+		  	</div>
+		  </ion-item>
+		  </button>
+		  <button (click)="onButtonmovie3()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/volcano.jpg" id="im"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>VOLCANO </h2></div>
+		  		<div class="raw"><h2> RETURNS</h2></div>
+		  		
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.24.06)</h2></div>
+		  	</div>
+		  		
+
+		  	</div>
+		  </ion-item>
+		</button>
+		<button (click)="onButtonmovie4()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/40days.jpg" id="im"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>40 DAYS AND</h2></div>
+		  		<div class="raw"><h2> NIGHTS DISASTER</h2></div>
+		  		
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.30.22)</h2></div>
+		  	</div>
+		  		
+		  	</div>
+		  	</ion-item>
+		  </button>
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/VORTEX.jpg"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>THE VORTEX OF </h2></div>
+		  		<div class="raw"><h2>DEATH</h2></div>
+		  		
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.23.53)</h2></div>
+		  	</div>
+		  		
+		  	</div>
+		  	
+		  </ion-item>
+		    <ion-item>
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/gifted.PNG"></div>
+		  		<div class="col"> hiiiiiii</div>
+		  	</div>
+		  	
+		  </ion-item>
+	</ion-list>
+
+</ion-content>

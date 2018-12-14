@@ -1,0 +1,119 @@
+<!--
+  Generated template for the AllMoviesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	 <ion-buttons left>
+      <button navPop ion-button icon-only style="color: #ffffff;">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Malayalam Movie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="bg" class="no-scroll">
+<!-- 	<ion-item>
+		
+		<ion-input type="text" [(ngModel)]="channelId"></ion-input>
+	</ion-item>
+	<button full ion-button (click)="searchPlaylist()" [disabled]="channelId ===''" color="danger">Search Playlist</button>
+	<ion-list>
+		<button ion-item *ngFor="let list of playlists | async" (click)="openPlaylist(list.id)">
+			<ion-thumbnail item-start>
+				<img [src]="list.snippet.thumbanails.standard.url">
+			</ion-thumbnail>
+			<h2>{{ list.snippet.title }}</h2>
+			<p> {{lis t.snippet.publishedAt | date: 'short</p>
+		</button>
+	</ion-list> -->
+
+	<ion-list>
+		<button (click)="onButtonmovie1()" id="btn">
+		  <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/oru-pazhaya.jpg" id="im"></div>
+		  		
+		  		<div class="col"> 
+		  		<div class="raw"><h2>ORU PAZHAYA</h2></div>
+		  		<div class="raw"><h2>BOMB KADHA </h2></div>
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(2.21.21)</h2></div>
+		  	</div>
+		  </div>
+		  </ion-item>	
+		</button>
+
+		<button (click)="onButtonmovie2()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/prithiraj.jpg" id="im"></div>
+		  		
+		  		<div class="col">
+		  		<div class="raw"> <h2>SIMHASANAM </h2></div>
+		  		<div class="raw"><h2>PRITHVIRAJ </h2></div>
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(2.32.35)</h2></div>
+		  	</div>
+		  	</div>
+		  </ion-item>
+		  </button>
+		  <button (click)="onButtonmovie3()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/HOTEL.jpg" id="im"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>HOTEL CALIFORNIA</h2></div>
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(2.17.08)</h2></div>
+		  	</div>
+		  		
+
+		  	</div>
+		  </ion-item>
+		</button>
+		<button (click)="onButtonmovie4()" id="btn">
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/ezra.jpg" id="im"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>EZRA </h2></div>
+		  		
+		  		
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(2.19.20)</h2></div>
+		  	</div>
+		  		
+		  	</div>
+		  	</ion-item>
+		  </button>
+		    <ion-item id="li">
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/VORTEX.jpg"></div>
+		  		<div class="col">
+		  		<div class="raw"> <h2>THE VORTEX OF </h2></div>
+		  		<div class="raw"><h2>DEATH</h2></div>
+		  		
+		  		<div class="spacer" style="height: 10px;"></div>
+		  		<div class="raw"><h2>(1.23.53)</h2></div>
+		  	</div>
+		  		
+		  	</div>
+		  	
+		  </ion-item>
+		    <ion-item>
+		  	<div class="row">
+		  		<div class="col"><img src="../assets/imgs/gifted.PNG"></div>
+		  		<div class="col"> hiiiiiii</div>
+		  	</div>
+		  	
+		  </ion-item>
+	</ion-list>
+
+</ion-content>

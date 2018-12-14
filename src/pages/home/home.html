@@ -1,0 +1,89 @@
+
+<!-- <div id="custom-overlay" [style.display]="splash ? ' ': 'none'">
+  <div class="flab">
+    <div class="Aligner-item Aligner-item--top"></div>
+   
+    <img src="assets/imgs/download.jpeg" id="img">
+   
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div> -->
+
+
+<div class="custom-overlay"  [style.display]="splash ? ' ': 'none'">
+  <div class="linner">
+    <img src="../assets/imgs/animation2.gif">
+
+  </div>
+</div>
+
+
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Free Movie Online</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="bg" class="no-scroll">
+
+
+
+ <!--  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+
+  <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
+   <ion-slides pager autoplay="1000" loop="true" speed="3000" id="slide">
+     
+    <ion-slide >
+      <img src="../assets/imgs/bollywood2.jpeg">
+    </ion-slide>
+    <ion-slide >
+      <img src="../assets/imgs/mirzya.jpg">
+    </ion-slide>
+    <ion-slide >
+      <img src="../assets/imgs/images.jpeg">
+    </ion-slide>
+  </ion-slides>
+
+ <ion-card id="card">
+    <ion-card-content  style="color: #ffffff;">
+
+  <ion-row>
+    <ion-col id="title">
+      Category
+    </ion-col>
+    <ion-col></ion-col>
+    <ion-col>
+       <button ion-button (click)="onButtoMore()" id="more">More</button>
+    </ion-col>
+  </ion-row>
+
+<div class="spacer" style="height: 20px;"></div>
+
+   <ion-row>
+      <ion-col>
+        <button id="btn1" (click)="onButtonbollywood()"><img src="../assets/imgs/bollywood.jpeg" id="im">
+        <p id="sub">Bollywood Movies</p>      
+        </button>
+     </ion-col>
+       <ion-col>
+        <button id="btn1" (click)="onButtoncartoon()"><img src="../assets/imgs/cartoon.jpg" id="im"><p id="sub">Cartoon Movies</p>
+         </button>
+      </ion-col>
+        <ion-col>
+        <button id="btn1" (click)="onButtonhollywood()"><img src="../assets/imgs/hollywood.jpeg" id="im">
+          <p id="sub">Hollywood Movies</p>
+         </button>
+     </ion-col>
+    </ion-row>
+
+   </ion-card-content>
+ </ion-card>
+  
+</ion-content>
